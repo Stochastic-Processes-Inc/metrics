@@ -261,8 +261,8 @@ fn valid_metric_name_start_character(c: char) -> bool {
 
 #[inline]
 fn valid_metric_name_character(c: char) -> bool {
-    // Essentially, needs to match the regex pattern of [a-zA-Z0-9_:].
-    c.is_ascii_alphanumeric() || c == '_' || c == ':'
+    // Essentially, needs to match the regex pattern of [a-zA-Z0-9_:.].
+    c.is_ascii_alphanumeric() || c == '_' || c == ':' || c == '.'
 }
 
 #[inline]
